@@ -1,0 +1,9 @@
+Rust is a systems programming language developed by Mozilla.
+It is designed to be a "safe, concurrent, programming language", and aims to support multiple platforms, including Linux, Windows, and embedded systems.
+
+Rust's idea of safety is an extremely central aspect of the language, and influences all aspects of building systems with Rust.
+This is accomplished via a very powerful type and memory management system, which guarantees at compile time that your code is memory safe, and has no data races, null pointers, or use-after-free errors.
+
+We'll learn some of the basics of Rust, including data handling, concurrency, and data safety.
+
+Attendees should install Rust before the session (via https://www.rustup.rs/ is the official method)
