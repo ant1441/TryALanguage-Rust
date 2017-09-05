@@ -142,9 +142,9 @@ Create a basic TCP server which responds with "hello world"
 
 # Exercise 7
 
-Create a TCP server which responds with a hash of the received data.
-Extend this by handling each request in it's own thread.
-Extend this further by storing computed requests in a central cache (Try `std::collections::HashMap` in a `Mutex`)
+* Create a TCP server which responds with a hash of the received data.
+* Extend this by handling each request in it's own thread.
+* Extend this further by storing computed requests in a central cache (Try `std::collections::HashMap` in a `Mutex`)
 
 ## Example
 
