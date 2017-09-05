@@ -148,7 +148,7 @@ Create a basic TCP server which responds with "hello world"
 
 ## Example
 
-You may use this hash function, or (if you have an internet connection, try using the [md5](https://crates.io/crates/md5) Crate.
+You may use this hash function, or if you have an internet connection try using the [md5](https://crates.io/crates/md5) Crate.
 
 ``` rust
 use std::hash::Hash;
