@@ -50,9 +50,8 @@ Create a program which uses the `std::thread::spawn` function to print from mult
 Modify your program to print the number of the thread.
 
 ## Note
-May need `move` on closure to capture index.
-Also `thread::sleep`.
-Also `JoinHandle::join`.
+* May need `move` on closure to capture index.
+* Also you may wish to use `thread::sleep` or `JoinHandle::join`.
 
 ## Example
 

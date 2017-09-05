@@ -11,6 +11,7 @@ pub fn main() {
 * `pub` declares its scope
 * `main` is called by default in an executable
 * `|var| { func(var) }` is a closure
+* `move |var| { func(var) }` is a closure which takes ownership of its enclosed variables.
 
 # Types
 
