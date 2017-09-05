@@ -26,6 +26,11 @@ Call that function a second time in the main function, and see why it fails to c
 
 Understand how to fix that, and what it means.
 
+## Note
+
+Trying this with numbers may give a different result.
+They implement the `Copy` trait, which means they can be automatically copied to pass into a function.
+
 ## Example
 
 ``` rust
