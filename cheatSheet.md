@@ -53,3 +53,10 @@ In this case the `'static` lifetime can be used, which requires that any `a` pas
 
 * Many functions will return `Result<T, E>`, which has variants of `Ok(T)` and `Err(E)`
 * The result can be extracted with `.unwrap()` or `if let Ok(val)`
+
+# Traits
+
+Traits are how Rust allows generic code.
+Any struct can implement a trait, and a function can take a parameter of type 'Trait'.
+
+Eg. The `ToString` trait defines the `to_string()` method, which must return a String.
