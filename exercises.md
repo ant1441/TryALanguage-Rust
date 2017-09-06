@@ -139,7 +139,7 @@ Create a basic TCP server which responds with "hello world"
 
 ## Note
 
-* `std::net::TcpListener`
+* You probably want `std::net::TcpListener` here.
 
 # Exercise 7
 
