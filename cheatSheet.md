@@ -60,7 +60,7 @@ loop {
 # Lifetimes
 
 ``` rust
-fn foo(a: &T) {
+fn print_forever(a: &T) {
     thread::spawn(move || loop { println!("a: {}", a) });
 }
 ```
@@ -68,6 +68,15 @@ fn foo(a: &T) {
 This function will not work, as it is borrowing `a` for the 'lifetime' of the function scope.
 However, this function scope creates a thread that may live forever, so the function scope may not "let go" of `a`.
 This is a problem, because `a` could be some heap allocated memory which immediately gets freed.
+
+(not real Rust!)
+```rust
+let value = heap_allocate("Print me forever");
+print_forever(&value);
+heap_free(value);
+```
+What gets printed after the call to `heap_free`?
+This is why Rust doesn't allow this.
 
 To work around this, you can specify a lifetime requirement to the parameter with the `'lifetime` syntax.
 Ie. `foo(a: &'l T)`.
