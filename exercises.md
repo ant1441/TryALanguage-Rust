@@ -77,8 +77,8 @@ The Rust compiler guarantees that your code will not have any data races, so you
 * `std::sync::atomic::{AtomicUsize, Ordering}`;
 * `std::sync::Mutex`;
 * `AtomicUsize` has the `fetch_add` method.
-* Atomics - Use `Ordering::SeqCst`.
-* `Mutex` - `Deref` for `MutexGaurd`.
+* Atomics - For Ordering just use `Ordering::SeqCst`, the other options are complex and subtle `SeqCst` will do what you want (though maybe very slightly slower).
+* `Mutex` - `Mutex::lock()` returns a `MutexGaurd`. `MutexGaurd` implements the `Deref` trait, which allows you to use `*val` to access the value. *auto-dereferencing* means this sometimes isn't required, as in the below example.
 
 ## Example
 
