@@ -75,6 +75,7 @@ The Rust compiler guarantees that your code will not have any data races, so you
 
 ## Note
 * `std::sync::atomic::{AtomicUsize, Ordering}`;
+* `std::sync::Mutex`;
 * `AtomicUsize` has the `fetch_add` method.
 * Atomics - Use `Ordering::SeqCst`.
 * `Mutex` - `Deref` for `MutexGaurd`.

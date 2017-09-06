@@ -19,6 +19,8 @@ pub fn main() {
 * `f32`, `f64` - single / double precision floating point number
 * `bool` - `true` or `false`
 * `char` - a *Unicode Scalar Value*
+* `str` - A _string slice_, usually seen as &str, a reference to some UTF-8 data stored somewhere else. eg. &'static is stored in the binary output of the program.
+ `String` - 'Owned' string, which is often heap allocated.
 * `(u8, u8)`, `[u8]` - Tuples and arrays
 * Structs and ADTs - `Option<T>`, `Result<T, E>`
 
